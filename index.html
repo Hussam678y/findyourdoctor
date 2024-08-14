@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>لوحة التحكم</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="assets/css/layout.css">
@@ -188,25 +189,79 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">آخر 10 أطباء منظمين</h5>
-                        <table id="doctorsTable" class="table table-striped">
+                        <table id="doctorsTable" class="table table-responsive">
                             <thead>
                                 <tr>
-                                    <th>الطبيب</th>
+                                    <th style="width: 45%; text-align: center;">الطبيب</th>
                                     <th>العمر</th>
                                     <th>سنوات الخبرة</th>
-                                    <th>تاريخ الإنظمام</th>
+                                    <th>تاريخ الإنضمام</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Fill with sample data -->
                                 <tr>
-                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40"
-                                            height="40"> د. أحمد حسن</td>
-                                    <td>45</td>
-                                    <td>20</td>
-                                    <td>12/04/2023</td>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        سامر محمد</td>
+                                    <td>38</td>
+                                    <td>14</td>
+                                    <td>02/08/2023</td>
                                 </tr>
-                                <!-- Repeat for more rows -->
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        لينا عبدالله</td>
+                                    <td>32</td>
+                                    <td>9</td>
+                                    <td>20/01/2024</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        حسام إبراهيم</td>
+                                    <td>41</td>
+                                    <td>17</td>
+                                    <td>15/06/2023</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        نادية محمد</td>
+                                    <td>35</td>
+                                    <td>12</td>
+                                    <td>01/09/2023</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        محمود أحمد</td>
+                                    <td>47</td>
+                                    <td>22</td>
+                                    <td>30/11/2023</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        رهام خالد</td>
+                                    <td>29</td>
+                                    <td>6</td>
+                                    <td>07/03/2024</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        عمر عبدالرحيم</td>
+                                    <td>43</td>
+                                    <td>19</td>
+                                    <td>25/10/2023</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        هدى إسماعيل</td>
+                                    <td>34</td>
+                                    <td>11</td>
+                                    <td>18/05/2023</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        أمير حسن</td>
+                                    <td>39</td>
+                                    <td>15</td>
+                                    <td>06/12/2023</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -219,25 +274,103 @@
                         <table id="requestsTable" class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>الطبيب</th>
+                                    <th style="width: 50%; text-align: center;">الطبيب</th>
                                     <th>العمر</th>
                                     <th>سنوات الخبرة</th>
-                                    <th>الإجراءات</th>
+                                    <th style="width: 30%; text-align: center;">الإجراءات</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Fill with sample data -->
                                 <tr>
-                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40"
-                                            height="40"> د. علي محمود</td>
-                                    <td>35</td>
-                                    <td>10</td>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        أحمد فهد</td>
+                                    <td>37</td>
+                                    <td>12</td>
                                     <td>
                                         <button class="btn btn-success btn-sm">قبول</button>
                                         <button class="btn btn-danger btn-sm">رفض</button>
                                     </td>
                                 </tr>
-                                <!-- Repeat for more rows -->
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        سارة خالد</td>
+                                    <td>41</td>
+                                    <td>15</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        محمد إبراهيم</td>
+                                    <td>29</td>
+                                    <td>6</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        نورا عبدالله</td>
+                                    <td>33</td>
+                                    <td>8</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        جمال محمود</td>
+                                    <td>44</td>
+                                    <td>18</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        فاطمة أحمد</td>
+                                    <td>31</td>
+                                    <td>7</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        عمر عبدالرحمن</td>
+                                    <td>39</td>
+                                    <td>13</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        رانيا محمد</td>
+                                    <td>27</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40" height="40"> د.
+                                        خالد إسماعيل</td>
+                                    <td>42</td>
+                                    <td>16</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -257,7 +390,7 @@
         <i id="themeIcon" class="bi bi-laptop"></i>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/2.1.3/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.1.3/js/dataTables.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
@@ -286,8 +419,13 @@
 
         // Initialize DataTables
         document.addEventListener('DOMContentLoaded', function () {
+            
             $('#doctorsTable').DataTable();
+            document.querySelector('#doctorsTable')
+                .setAttribute('dir', 'rtl'); 
             $('#requestsTable').DataTable();
+            document.querySelector('#requestsTable')
+                .setAttribute('dir', 'rtl'); 
         });
         const sidebar = document.getElementById('sidebar');
         const menuToggleBtn = document.getElementById('menuToggle');
