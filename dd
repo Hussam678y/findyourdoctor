@@ -1,0 +1,195 @@
+حاول تلغي جميع اكواد ال css اريد كلها اووامر بوتستراب
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link id="themeStylesheet" rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <style>
+        /* الوضع النهاري */
+        body {
+            background-color: #e3f2fd;
+            color: #212529;
+        }
+
+        .navbar {
+            width: calc(100% - 200px);
+            background-color: #e3f2fd;
+        }
+
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            background-color: #007bff;
+        }
+
+        .sidebar .nav-link {
+            color: #fff;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            margin-right: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 200px);
+            text-align: center;
+            background-color: #e3f2fd;
+            padding: 10px;
+        }
+
+        #themeToggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* الوضع الليلي */
+        body.dark-mode {
+            background-color: #343a40;
+            color: #adb5bd;
+        }
+
+        body.dark-mode .navbar,
+        body.dark-mode footer {
+            background-color: #343a40;
+            color: #adb5bd;
+        }
+
+        body.dark-mode .txt1 {
+            color: #adb5bd;
+        }
+
+        body.dark-mode .sidebar {
+            background-color: #212529;
+        }
+
+        body.dark-mode .sidebar .nav-link {
+            color: #adb5bd;
+        }
+
+        body.dark-mode .sidebar .nav-link:hover {
+            background-color: #343a40;
+        }
+
+        body.dark-mode .btn {
+            background-color: #adb5bd;
+            color: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img class="rounded-circle" src="assets/img/logo_company.png" alt="شعار الشركة" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                <span class="ms-2 txt1">Technology Smaile</span>
+            </div>
+            <div class="mx-auto">
+                <span class="txt1">لوحة التحكم الخاصة بالمستشفى</span>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- User Profile Section -->
+        <div class="text-center py-4">
+            <img src="assets/img/user.png" alt="User Image" class="rounded-circle" width="80" height="80">
+            <h5 class="mt-3 text-white">حسام فيتور</h5>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav flex-column">
+            <a class="nav-link d-flex justify-content-end align-items-center " href="#">
+                <span class=" me-2">الصفحة الرئسية</span>
+                <i class="bi bi-house-door"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center" href="#">
+                <span class="me-2">معلومات المستشفى</span>
+                <i class="bi bi-info-circle"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center" href="#">
+                <span class=" me-2">وسائل الإتصال</span>
+                <i class="bi bi-telephone"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center" href="#">
+                <span class=" me-2">إدارة الأطباء</span>
+                <i class="bi bi-person-badge"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center" href="#">
+                <span class=" me-2">طلبات الإنضمام</span>
+                <i class="bi bi-person-plus"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center" href="#">
+                <span class=" me-2">قائمة الإنجازات</span>
+                <i class="bi bi-trophy"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center" href="#">
+                <span class=" me-2">إدارة المستخدمين</span>
+                <i class="bi bi-trophy"></i>
+            </a>
+        </nav>
+    </div>
+
+
+
+    <!-- Main Content -->
+    <main>
+        <div class="container d-flex flex-row-reverse">
+            <h1>مرحبًا بك في لوحة التحكم</h1>
+        </div>
+    </main>
+
+    <!-- Floating Button -->
+    <button id="themeToggle" class="btn btn-secondary">
+        <i id="themeIcon" class="bi bi-moon"></i> <!-- أيقونة الهلال افتراضياً -->
+    </button>
+    <!-- Footer -->
+    <footer>
+        <span>حقوق الحفظ والنشر محفوظة لشركة Technology Smaile</span>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        // تغيير الوضع مع تغيير الأيقونة
+        themeToggleBtn.addEventListener('click', function () {
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('bi-moon');
+                themeIcon.classList.add('bi-sun');
+            } else {
+                themeIcon.classList.remove('bi-sun');
+                themeIcon.classList.add('bi-moon');
+            }
+        });
+    </script>
+</body>
+
+</html>

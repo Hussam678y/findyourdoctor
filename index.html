@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="assets/img/logo_company.png" alt="شعار الشركة" width="30" height="30" class="rounded-circle">
+                <span class="ms-2">Technology Smaile</span>
+            </div>
+            <div class="mx-auto">
+                <span>لوحة التحكم الخاصة بالمستشفى</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="me-2 txt1">دار الطب</span>
+                <img src="assets/img/hospital-active.png" alt="أيقونة المستشفى" width="30" height="30"
+                    class="d-inline-block align-text-top">
+            </div>
+            <!-- Toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item active" href="#">الصفحة الرئسية <i class="bi bi-house-door ms-2"></i></a>
+                </li>
+                <li><a class="dropdown-item" href="#">معلومات المستشفى <i class="bi bi-info-circle ms-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">وسائل الإتصال <i class="bi bi-telephone ms-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">إدارة الأطباء <i class="bi bi-person-badge ms-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">طلبات الإنضمام <i class="bi bi-person-plus ms-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">قائمة الإنجازات <i class="bi bi-trophy ms-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">إدارة المستخدمين <i class="bi bi-gear ms-2"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <!-- Menu Toggle Button -->
+        <div class="menuClose text-light">
+            <a id="menuToggle">
+                <i id="menuIcon" class="bi bi-chevron-right fs-5"></i>
+            </a>
+        </div>
+        <!-- User Profile Section -->
+        <div class="profile mb-4">
+            <img src="assets/img/user.png" alt="User Image" class="rounded-circle mb-2">
+            <h5 class="text-light">حسام فيتور</h5>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav flex-column">
+            <a class="nav-link d-flex justify-content-end align-items-center fs-6 mt-1 active mt-1" href="#">
+                <span>الصفحة الرئسية</span>
+                <i class="bi bi-house-door ms-2"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center fs-6 mt-1" href="#">
+                <span>معلومات المستشفى</span>
+                <i class="bi bi-info-circle ms-2"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center fs-6 mt-1" href="#">
+                <span>وسائل الإتصال</span>
+                <i class="bi bi-telephone ms-2"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center fs-6 mt-1" href="#">
+                <span>إدارة الأطباء</span>
+                <i class="bi bi-person-badge ms-2"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center fs-6 mt-1" href="#">
+                <span>طلبات الإنضمام</span>
+                <i class="bi bi-person-plus ms-2"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center fs-6 mt-1" href="#">
+                <span>قائمة الإنجازات</span>
+                <i class="bi bi-trophy ms-2"></i>
+            </a>
+            <a class="nav-link d-flex justify-content-end align-items-center fs-6 mt-1" href="#">
+                <span>إدارة المستخدمين</span>
+                <i class="bi bi-gear ms-2"></i>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1 p-3">
+        <!-- Row of 4 Cards -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card-custom">
+                    <div class="icon-container">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="number">99</div>
+                        <div class="label">عدد الأطباء</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-custom">
+                    <div class="icon-container">
+                        <i class="bi bi-collection"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="number">12</div>
+                        <div class="label">عدد الأقسام</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-custom">
+                    <div class="icon-container">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="number">34</div>
+                        <div class="label">حجوزات اليوم</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-custom">
+                    <div class="icon-container">
+                        <i class="bi bi-cash-stack"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="number">5000</div>
+                        <div class="label">قيمة الحجوزات</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row with Chart and Best Doctor -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">رسم بياني لشهر 10</h5>
+                        <canvas id="bookingChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-blue best-doctor-card">
+                    <div class="d-flex flex-column align-items-center pt-1">
+                    <img src="assets/img/doctor-active.png" height="150" width="150" alt="أفضل دكتور">
+                    <h5>د. فاطمة علي</h5>
+                    <p class="pt-2">أخصائي جراحة</p>
+                    </div>
+                    <div class="stats-row">
+                        <div class="stats-col">
+                            <p>عدد الحجوزات</p>
+                            <div class="stat-number">120</div>
+                        </div>
+                        <div class="stats-col">
+                            <p>التقييم</p>
+                            <div class="stat-number">4.9</div>
+                        </div>
+                        <div class="stats-col">
+                            <p>عدد الغياب</p>
+                            <div class="stat-number">2</div>
+                        </div>
+                    </div>
+                    <div class="datails">
+                        <a class="d-flex flex-column align-items-center pt-1 text-dark" href="">إعرض التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row with DataTables -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">آخر 10 أطباء منظمين</h5>
+                        <table id="doctorsTable" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>الطبيب</th>
+                                    <th>العمر</th>
+                                    <th>سنوات الخبرة</th>
+                                    <th>تاريخ الإنظمام</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Fill with sample data -->
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40"
+                                            height="40"> د. أحمد حسن</td>
+                                    <td>45</td>
+                                    <td>20</td>
+                                    <td>12/04/2023</td>
+                                </tr>
+                                <!-- Repeat for more rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">آخر 10 طلبات الإنضمام</h5>
+                        <table id="requestsTable" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>الطبيب</th>
+                                    <th>العمر</th>
+                                    <th>سنوات الخبرة</th>
+                                    <th>الإجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Fill with sample data -->
+                                <tr>
+                                    <td><img src="assets/img/doctor-active.png" alt="دكتور" class="rounded-circle" width="40"
+                                            height="40"> د. علي محمود</td>
+                                    <td>35</td>
+                                    <td>10</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm">قبول</button>
+                                        <button class="btn btn-danger btn-sm">رفض</button>
+                                    </td>
+                                </tr>
+                                <!-- Repeat for more rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <span>حقوق الحفظ والنشر محفوظة لشركة Technology Smaile</span>
+    </footer>
+
+    <!-- Floating Button for Theme Toggle -->
+    <div id="themeToggle" class="btn btn-secondary position-fixed bottom-0 end-0 m-4">
+        <i id="themeIcon" class="bi bi-laptop"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Chart setup
+        const ctx = document.getElementById('bookingChart').getContext('2d');
+        const bookingChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: Array.from({ length: 30 }, (_, i) => i + 1), // Days of the month
+                datasets: [{
+                    label: 'الحجوزات',
+                    data: Array.from({ length: 30 }, () => Math.floor(Math.random() * 100)), // Random booking data
+                    backgroundColor: 'rgb(0, 92, 230)',
+                    borderColor: 'rgb(0, 92, 230)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Initialize DataTables
+        document.addEventListener('DOMContentLoaded', function () {
+            $('#doctorsTable').DataTable();
+            $('#requestsTable').DataTable();
+        });
+        const sidebar = document.getElementById('sidebar');
+        const menuToggleBtn = document.getElementById('menuToggle');
+        const menuIcon = document.getElementById('menuIcon');
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        // Toggle Sidebar visibility
+        menuToggleBtn.addEventListener('click', function () {
+            sidebar.classList.toggle('collapsed');
+            document.querySelector('.navbar').classList.toggle('navbar-full');
+
+            // Change icon based on sidebar state
+            if (sidebar.classList.contains('collapsed')) {
+                menuIcon.classList.remove('bi-chevron-right');
+                menuIcon.classList.add('bi-chevron-left');
+            } else {
+                menuIcon.classList.remove('bi-chevron-left');
+                menuIcon.classList.add('bi-chevron-right');
+            }
+        });
+
+        // Theme toggle functionality
+        themeToggleBtn.addEventListener('click', function () {
+            const currentTheme = body.classList.contains('bg-light') ? 'light' : 'dark';
+            if (currentTheme === 'light') {
+                body.classList.remove('bg-light', 'text-dark');
+                body.classList.add('bg-dark', 'text-light', 'dark-mode');
+                themeIcon.classList.remove('bi-sun');
+                themeIcon.classList.add('bi-moon');
+            } else if (currentTheme === 'dark') {
+                body.classList.remove('bg-dark', 'text-light', 'dark-mode');
+                body.classList.add('bg-light', 'text-dark');
+                themeIcon.classList.remove('bi-moon');
+                themeIcon.classList.add('bi-sun');
+            }
+        });
+
+        // Set default theme based on system preference
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (prefersDarkScheme) {
+            body.classList.add('bg-dark', 'text-light', 'dark-mode');
+            themeIcon.classList.add('bi-moon');
+        } else {
+            body.classList.add('bg-light', 'text-dark');
+            themeIcon.classList.add('bi-sun');
+        }
+
+        // Toggle between system default, dark, and light modes
+        themeToggleBtn.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+            if (themeIcon.classList.contains('bi-laptop')) {
+                themeIcon.classList.remove('bi-laptop');
+                themeIcon.classList.add(prefersDarkScheme ? 'bi-moon' : 'bi-sun');
+            } else {
+                themeIcon.classList.remove('bi-sun', 'bi-moon');
+                themeIcon.classList.add('bi-laptop');
+                if (prefersDarkScheme) {
+                    body.classList.remove('bg-light', 'text-dark');
+                    body.classList.add('bg-dark', 'text-light', 'dark-mode');
+                } else {
+                    body.classList.remove('bg-dark', 'text-light', 'dark-mode');
+                    body.classList.add('bg-light', 'text-dark');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
